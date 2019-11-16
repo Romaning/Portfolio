@@ -1,0 +1,115 @@
+/* ############# Esto es realizado desde cero ###########*/
+@import "../css/font.css";
+@import "../partials/_variables.css";
+/*todo*/
+/* ################### start navigation #################*/
+.header_area .main_menu .navbar .navbar-brand{
+    padding: 0 1rem 0 3rem; /*espacio (top), (right), (bottom), (left).*/ /*todo aplica*/
+}
+.header_area .main_menu .navbar{ /*navbar*/
+    padding: 0 10rem; /* espacio (top bottom) (left rigth) */ /*todo aplica*/
+}
+.header_area .main_menu .nav-item .nav-link{
+    /*font-family: "Roboto";*/
+    text-transform: uppercase; /*convierte minuscula en mayuscula*/
+    font-weight: 500;
+    padding: 1rem 1.7rem 1rem 1.7rem;
+    color:var(--title-color);
+}
+.header_area .main_menu .navbar-nav .active a{ /*cuando el elemento este activo*/
+    background: var(--gradient-color);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip: text;
+}
+/*TODO start °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+.header_area .main_menu .navbar-nav a:hover{ /*al hacer hover*/
+    background: var(--gradient-color);  /*fondo para relleno de texto*/
+    -webkit-background-clip:text;       /*preparar rellenar el color al teto*/
+    -webkit-text-fill-color:transparent;/*relleno de texto en transparente*/
+    background-clip: text;              /*rellenear el color en texto*/
+}
+/*TODO  end °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
+/* #################### end navigation ################## */
+
+
+/*todo*/
+/* ##################### start banner ####################### */
+.site_main .site_banner{
+    background: #ff24df;
+    background: url("../img/banner/home-banner.png") no-repeat;
+    background-position: 0% 50%;
+}
+.site_main .site_banner .site_title h3{
+    padding-top: 30%;
+}
+/*TODO start °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+.site_main .site_banner .site_title h3::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+/*TODO end °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+.site_main .site_banner .site_title h1{
+    font-size: 5rem;
+}
+.site_main .site_banner .site_title h4{
+    font-size: 1.5rem;
+}
+.site_main .site_banner .banner_image{
+    padding: 4rem 0;
+}
+/*TODO start °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+.site_buttons .button_primario{
+    padding: .3rem 1.3rem;
+    position: relative;
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    color: white;
+    box-shadow: var(--box-shadow);
+}
+.site_buttons .button_primario:hover{
+    background: white;
+    background-clip: padding-box;
+    color: black;
+}
+.site_buttons .button_primario::after{
+    content: "";
+    position: absolute;
+    top: -2px; left: -2px; bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    z-index: -1;
+}
+/*TODO end °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+
+/*TODO start °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+.site_buttons .button_secundario {
+    padding: .3rem 1.3rem;
+    position: relative;
+    background: white;
+    background-clip: padding-box;
+    color: black;
+    box-shadow: var(--box-shadow);
+    border: 2px solid transparent;
+}
+.site_buttons .button_secundario:hover{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: white;
+}
+.site_buttons .button_secundario:after{
+    content: "";
+    position: absolute;
+    top: -2px; left: -2px; bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    z-index: -1;
+}
+/*TODO end °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+/*todo*/
+/* ##################### end banner ####################### */
+
